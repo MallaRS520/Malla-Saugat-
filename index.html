@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MALLA SAUGAT — Portfolio</title>
+  <meta name="description" content="Portfolio of Malla Saugat — web projects, games and contact." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa6bd;--accent:#6ee7b7;--glass: rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg,#071126 0%, #0b1320 100%);color:#e6eef8;line-height:1.5;
+      -webkit-font-smoothing:antialiased;padding:32px;
+    }
+    .container{max-width:1000px;margin:0 auto}
+    header{
+      display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px
+    }
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,#2dd4bf,#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#052826}
+    h1{font-size:20px;margin:0}
+    p.lead{margin:0;color:var(--muted)}
+    nav a{color:var(--accent);text-decoration:none;font-weight:600}
+
+    .grid{display:grid;grid-template-columns:1fr;gap:18px}
+    @media(min-width:880px){.grid{grid-template-columns:360px 1fr}}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;padding:18px;box-shadow:0 6px 24px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    .profile .meta{display:flex;flex-direction:column;gap:8px}
+    .meta .small{font-size:13px;color:var(--muted)}
+    .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:8px;color:inherit;text-decoration:none;font-weight:600}
+    .btn.primary{background:linear-gradient(90deg,#2dd4bf,#60a5fa);color:#042226;border:0}
+
+    .projects{display:flex;flex-direction:column;gap:18px}
+    .project-head{display:flex;align-items:center;gap:12px;justify-content:space-between}
+    .project-title{font-weight:700}
+    .preview{height:300px;border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.04);background:var(--glass);display:block}
+    .project-body{display:flex;flex-direction:column;gap:10px}
+    .meta-line{color:var(--muted);font-size:13px}
+
+    footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
+
+    /* small helpers */
+    .kbd{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:6px;font-weight:600;font-size:13px}
+    .tag{display:inline-block;padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.02);font-weight:700;font-size:12px}
+    .note{font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">MS</div>
+        <div>
+          <h1>MALLA SAUGAT</h1>
+          <p class="lead">Student • Front-end enthusiast • Small games & web projects</p>
+        </div>
+      </div>
+      <nav>
+        <a href="https://github.com/mallars520" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+    </header>
+
+    <div class="grid">
+      <!-- left column: profile / details -->
+      <aside class="card profile">
+        <div class="meta">
+          <div class="small">Student ID: <span class="kbd">2518534</span></div>
+          <div class="small">Location: Seo-gu, Busan</div>
+          <div class="small">Email: <a href="mailto:nirajanmalla409@gmail.com">nirajanmalla409@gmail.com</a></div>
+        </div>
+
+        <div class="actions">
+          <a class="btn primary" href="https://mallars520.github.io/MALLA-SAUGAT-5/" target="_blank" rel="noopener noreferrer">Current Portfolio</a>
+          <a class="btn" href="https://mallars520.github.io/saugatmalla.updowngame.html/" target="_blank" rel="noopener noreferrer">Old UpDown Game</a>
+          <a class="btn" href="https://mallars520.github.io/Improved-version-/" target="_blank" rel="noopener noreferrer">New UpDown Game</a>
+        </div>
+
+        <hr style="margin:16px 0;border:0;border-top:1px solid rgba(255,255,255,0.03)">
+        <div class="note">Quick links: use the buttons above to open each project. If a live preview doesn't render (some hosts block embedding), click the "Open in new tab" button for a full view.</div>
+      </aside>
+
+      <!-- right column: projects -->
+      <main>
+        <section class="card projects">
+          <div class="project-h
